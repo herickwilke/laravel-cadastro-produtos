@@ -5,11 +5,11 @@
     
         <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li @if($current=="home") class="nav-item active" @else class="nav-item" @endif>
             <a class="nav-link" href="/">Home</a>
-        <li class="nav-item ">
+        <li @if($current=="produtos") class="nav-item active" @else class="nav-item" @endif>
             <a class="nav-link" href="/produtos">Produtos</a>
-        <li class="nav-item ">
+        <li @if($current=="categorias") class="nav-item active" @else class="nav-item" @endif>
             <a class="nav-link" href="/categorias">Categorias</a>
         </ul>
         </div>

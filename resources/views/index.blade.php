@@ -1,4 +1,4 @@
-    @extends('layouts.app')
+    @extends('layouts.app', ["current" => "home"])
 
     @section('body')
         
@@ -14,9 +14,9 @@
              </div>
              <div class="card border border-primary">
                 <div class="card-body">
-                <h5 class="card-title">Cadastro de Departamentos</h5>
+                <h5 class="card-title">Cadastro de Categorias</h5>
                     <p class="card-text">Cadastre as categorias de seus produtos.</p>
-                <a href="/categorias" class="btn btn-primary">Cadastre seus produtos</a>
+                <a href="/categorias" class="btn btn-primary">Cadastre suas categorias</a>
                 </div>
              </div>
         </div>

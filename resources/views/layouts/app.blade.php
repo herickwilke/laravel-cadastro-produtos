@@ -14,7 +14,7 @@
     </head>
     <body>
         <div class="container">
-            @component('component_navbar')
+            @component('component_navbar', ["current" => $current])
             @endcomponent
             <main role="main">
                 @hasSection ('body')
@@ -25,5 +25,9 @@
         </div>
 
     <script src="{{asset('js/app.js')}}"></script>
+
+    @hasSection('javascript')
+        @yield('javascript')
+    @endif
     </body>
 </html>
